@@ -1,0 +1,384 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_keyboard_shortcut_advanced
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 20:35+0000\n"
+"PO-Revision-Date: 2026-11-10 20:35+0000\n"
+"Last-Translator: Ibrahim Yahia\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/models/pos_keyboard_shortcut.py:0
+#, python-format
+msgid "'%s' is reserved by the web browser."
+msgstr "المفتاح '%s' محجوز من قبل متصفح الويب."
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/models/pos_keyboard_shortcut.py:0
+#, python-format
+msgid "'%s' is used by the POS itself (numpad, popups, form navigation). Combine it with Ctrl or Alt."
+msgstr "المفتاح '%s' تستخدمه نقطة البيع نفسها (لوحة الأرقام، النوافذ المنبثقة، التنقل في النماذج). استخدمه مع Ctrl أو Alt."
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/models/pos_keyboard_shortcut.py:0
+#, python-format
+msgid "'%s': printable characters (letters, digits, symbols) need Ctrl or Alt. Without a modifier they would collide with barcode scanners and the numpad quantity buffer."
+msgstr "'%s': الأحرف القابلة للطباعة (الحروف والأرقام والرموز) تتطلب Ctrl أو Alt. فبدون مفتاح تعديل ستتعارض مع قارئات الباركود ومع إدخال الكمية من لوحة الأرقام."
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/models/pos_keyboard_shortcut.py:0
+msgid "A key is required."
+msgstr "يجب تحديد مفتاح."
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__action
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_search
+msgid "Action"
+msgstr "الإجراء"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields.selection,name:pos_keyboard_shortcut_advanced.selection__pos_keyboard_shortcut__action__activate_product
+#: model:pos.keyboard.shortcut,name:pos_keyboard_shortcut_advanced.shortcut_activate_product
+msgid "Add Focused Product (same as mouse click)"
+msgstr "إضافة المنتج المحدد (مثل النقر بالماوس)"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/models/pos_keyboard_shortcut.py:0
+#, python-format
+msgid "Already used by '%s'."
+msgstr "مستخدم بالفعل في '%s'."
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__alt_key
+msgid "Alt"
+msgstr "Alt"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_form
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_search
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.res_config_settings_view_form_pksa
+msgid "Arrow-key product grid, PageUp/PageDown order lines, Enter to add the focused product"
+msgstr "التنقل في شبكة المنتجات بالأسهم، وأسطر الطلب بـ PageUp/PageDown، والمفتاح Enter لإضافة المنتج المحدد"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/static/src/backend/key_capture_field.js:0
+msgid "Click, then press a key"
+msgstr "انقر ثم اضغط مفتاحاً"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/static/src/app/shortcut_help_popup.xml:0
+msgid "Close"
+msgstr "إغلاق"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__combo
+msgid "Combo"
+msgstr "التركيبة"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.res_config_settings_view_form_pksa
+msgid "Configure Shortcuts"
+msgstr "إعداد الاختصارات"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__ctrl_key
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__default_combo
+msgid "Default"
+msgstr "الافتراضي"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.actions.act_window,help:pos_keyboard_shortcut_advanced.action_pos_keyboard_shortcut
+msgid "Define POS keyboard shortcuts"
+msgstr "حدد اختصارات لوحة المفاتيح لنقطة البيع"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,help:pos_keyboard_shortcut_advanced.field_pos_config__pksa_enabled
+msgid "Enable keyboard grid navigation and shortcuts in this Point of Sale."
+msgstr "تفعيل التنقل في شبكة المنتجات باستخدام لوحة المفاتيح والاختصارات في نقطة البيع هذه."
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_tree
+msgid "Every customised key will be restored to the factory map and POS-specific shortcuts will be archived. Continue?"
+msgstr "ستتم إعادة كل مفتاح مخصص إلى الإعدادات الأصلية وأرشفة الاختصارات الخاصة بنقاط البيع. هل تريد المتابعة؟"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields.selection,name:pos_keyboard_shortcut_advanced.selection__pos_keyboard_shortcut__action__focus_grid
+#: model:pos.keyboard.shortcut,name:pos_keyboard_shortcut_advanced.shortcut_focus_grid
+msgid "Focus Product Grid"
+msgstr "الانتقال إلى شبكة المنتجات"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields.selection,name:pos_keyboard_shortcut_advanced.selection__pos_keyboard_shortcut__action__focus_search
+#: model:pos.keyboard.shortcut,name:pos_keyboard_shortcut_advanced.shortcut_focus_search
+msgid "Focus Product Search"
+msgstr "الانتقال إلى البحث عن المنتجات"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields.selection,name:pos_keyboard_shortcut_advanced.selection__pos_keyboard_shortcut__action__go_payment
+#: model:pos.keyboard.shortcut,name:pos_keyboard_shortcut_advanced.shortcut_go_payment
+msgid "Go to Payment"
+msgstr "الانتقال إلى الدفع"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_form
+msgid "Internal note..."
+msgstr "ملاحظة داخلية..."
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__is_default
+msgid "Is Default"
+msgstr "افتراضي"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__key
+msgid "Key"
+msgstr "المفتاح"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/static/src/backend/key_capture_field.js:0
+msgid "Key Capture"
+msgstr "التقاط المفتاح"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_form
+msgid "Keyboard Shortcut"
+msgstr "اختصار لوحة المفاتيح"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/static/src/app/shortcut_help_popup.xml:0
+#: model:ir.actions.act_window,name:pos_keyboard_shortcut_advanced.action_pos_keyboard_shortcut
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_config__pksa_enabled
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_res_config_settings__pos_pksa_enabled
+#: model:ir.ui.menu,name:pos_keyboard_shortcut_advanced.menu_pos_keyboard_shortcut
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_tree
+msgid "Keyboard Shortcuts"
+msgstr "اختصارات لوحة المفاتيح"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,help:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__key
+msgid "KeyboardEvent.key value, e.g. ArrowUp, PageDown, Enter, F2 or a letter (letters and digits require Ctrl or Alt)."
+msgstr "قيمة KeyboardEvent.key، مثل ArrowUp أو PageDown أو Enter أو F2 أو حرف (الحروف والأرقام تتطلب Ctrl أو Alt)."
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,help:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__config_ids
+msgid "Leave empty to apply to every Point of Sale. A shortcut bound to a specific Point of Sale overrides the global shortcuts of the same action for that Point of Sale."
+msgstr "اتركه فارغاً ليُطبق على جميع نقاط البيع. الاختصار المرتبط بنقطة بيع معينة يحل محل الاختصارات العامة لنفس الإجراء في نقطة البيع تلك."
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.actions.act_window,help:pos_keyboard_shortcut_advanced.action_pos_keyboard_shortcut
+msgid "Map keys to POS actions: grid navigation, order line selection, payment and more. Click inside the <b>Key</b> cell and press the key you want to assign."
+msgstr "اربط المفاتيح بإجراءات نقطة البيع: التنقل في الشبكة، تحديد أسطر الطلب، الدفع والمزيد. انقر داخل خانة <b>المفتاح</b> ثم اضغط المفتاح الذي تريد تعيينه."
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_form
+msgid "Mapping"
+msgstr "التعيين"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/models/pos_keyboard_shortcut.py:0
+#, python-format
+msgid "No free combination left for '%s'."
+msgstr "لا توجد تركيبة متاحة متبقية لـ '%s'."
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/static/src/app/shortcut_help_popup.xml:0
+msgid "No keyboard shortcut is active for this Point of Sale."
+msgstr "لا يوجد اختصار لوحة مفاتيح مفعّل لنقطة البيع هذه."
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,help:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__combo
+msgid "Normalized technical combination used by the POS key registry."
+msgstr "التركيبة التقنية الموحدة التي يستخدمها سجل مفاتيح نقطة البيع."
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/static/src/app/shortcut_help_popup.js:0
+msgid "Offline: the current shortcuts are kept."
+msgstr "غير متصل: تم الإبقاء على الاختصارات الحالية."
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model,name:pos_keyboard_shortcut_advanced.model_pos_keyboard_shortcut
+msgid "POS Keyboard Shortcut"
+msgstr "اختصار لوحة مفاتيح نقطة البيع"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_search
+msgid "POS Specific"
+msgstr "خاص بنقطة بيع"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/models/pos_keyboard_shortcut.py:0
+msgid "Plain Enter is reserved for 'Add Focused Product' and for barcode scanners."
+msgstr "مفتاح Enter وحده محجوز لإجراء 'إضافة المنتج المحدد' ولقارئات الباركود."
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__config_ids
+msgid "Point of Sale"
+msgstr "نقطة البيع"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/static/src/backend/key_capture_field.js:0
+msgid "Press a key…"
+msgstr "اضغط مفتاحاً…"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields.selection,name:pos_keyboard_shortcut_advanced.selection__pos_keyboard_shortcut__action__grid_down
+#: model:pos.keyboard.shortcut,name:pos_keyboard_shortcut_advanced.shortcut_grid_down
+msgid "Product Grid: Move Down"
+msgstr "شبكة المنتجات: تحريك لأسفل"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields.selection,name:pos_keyboard_shortcut_advanced.selection__pos_keyboard_shortcut__action__grid_left
+#: model:pos.keyboard.shortcut,name:pos_keyboard_shortcut_advanced.shortcut_grid_left
+msgid "Product Grid: Move Left"
+msgstr "شبكة المنتجات: تحريك لليسار"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields.selection,name:pos_keyboard_shortcut_advanced.selection__pos_keyboard_shortcut__action__grid_right
+#: model:pos.keyboard.shortcut,name:pos_keyboard_shortcut_advanced.shortcut_grid_right
+msgid "Product Grid: Move Right"
+msgstr "شبكة المنتجات: تحريك لليمين"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields.selection,name:pos_keyboard_shortcut_advanced.selection__pos_keyboard_shortcut__action__grid_up
+#: model:pos.keyboard.shortcut,name:pos_keyboard_shortcut_advanced.shortcut_grid_up
+msgid "Product Grid: Move Up"
+msgstr "شبكة المنتجات: تحريك لأعلى"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/static/src/app/shortcut_help_popup.xml:0
+msgid "Reload"
+msgstr "إعادة التحميل"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_tree
+msgid "Reset All to Defaults"
+msgstr "إعادة الكل إلى الافتراضي"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_form
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_tree
+msgid "Restore Default"
+msgstr "استعادة الافتراضي"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_form
+msgid "Result"
+msgstr "النتيجة"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields.selection,name:pos_keyboard_shortcut_advanced.selection__pos_keyboard_shortcut__action__orderline_next
+#: model:pos.keyboard.shortcut,name:pos_keyboard_shortcut_advanced.shortcut_orderline_next
+msgid "Select Next Order Line"
+msgstr "تحديد سطر الطلب التالي"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields.selection,name:pos_keyboard_shortcut_advanced.selection__pos_keyboard_shortcut__action__orderline_prev
+#: model:pos.keyboard.shortcut,name:pos_keyboard_shortcut_advanced.shortcut_orderline_prev
+msgid "Select Previous Order Line"
+msgstr "تحديد سطر الطلب السابق"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__shift_key
+msgid "Shift"
+msgstr "Shift"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields,field_description:pos_keyboard_shortcut_advanced.field_pos_keyboard_shortcut__combo_display
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_search
+msgid "Shortcut"
+msgstr "الاختصار"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/models/pos_keyboard_shortcut.py:0
+#, python-format
+msgid "Shortcut %(combo)s is already used by '%(other)s'. Use 'Suggest Free Key' to get an available combination."
+msgstr "الاختصار %(combo)s مستخدم بالفعل في '%(other)s'. استخدم 'اقتراح مفتاح متاح' للحصول على تركيبة متاحة."
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/models/pos_keyboard_shortcut.py:0
+msgid "Shortcut conflict"
+msgstr "تعارض في الاختصار"
+
+#. module: pos_keyboard_shortcut_advanced
+#: code:addons/pos_keyboard_shortcut_advanced/static/src/app/shortcut_help_popup.js:0
+msgid "Shortcuts reloaded from the server."
+msgstr "تمت إعادة تحميل الاختصارات من الخادم."
+
+#. module: pos_keyboard_shortcut_advanced
+#: model:ir.model.fields.selection,name:pos_keyboard_shortcut_advanced.selection__pos_keyboard_shortcut__action__show_help
+#: model:pos.keyboard.shortcut,name:pos_keyboard_shortcut_advanced.shortcut_show_help
+msgid "Show Keyboard Shortcuts"
+msgstr "عرض اختصارات لوحة المفاتيح"
+
+#. module: pos_keyboard_shortcut_advanced
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_form
+#: model_terms:ir.ui.view,arch_db:pos_keyboard_shortcut_advanced.pos_keyboard_shortcut_view_tree
+msgid "Suggest Free Key"
+msgstr "اقتراح مفتاح متاح"

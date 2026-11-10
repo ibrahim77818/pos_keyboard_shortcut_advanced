@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="pos_keyboard_shortcut_advanced.ShortcutHelpPopup">
+        <Dialog title.translate="Keyboard Shortcuts" contentClass="'pksa-help-popup'">
+            <t t-if="state.rows.length">
+                <table class="pksa-help-table">
+                    <tbody>
+                        <tr t-foreach="state.rows" t-as="row" t-key="row.action">
+                            <td class="pksa-help-name"><t t-esc="row.name"/></td>
+                            <td class="pksa-help-keys">
+                                <t t-foreach="row.keys" t-as="k" t-key="k">
+                                    <kbd t-esc="k"/>
+                                </t>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </t>
+            <p t-else="" class="pksa-help-empty">No keyboard shortcut is active for this Point of Sale.</p>
+            <p t-if="state.message" class="pksa-help-message" t-esc="state.message"/>
+            <t t-set-slot="footer">
+                <button class="btn btn-primary btn-lg" t-on-click="props.close">Close</button>
+                <button class="btn btn-secondary btn-lg pksa-reload" t-att-disabled="state.loading"
+                        t-on-click="onClickReload">
+                    <i class="fa fa-refresh" t-att-class="{ 'fa-spin': state.loading }"/> Reload
+                </button>
+            </t>
+        </Dialog>
+    </t>
+
+</templates>

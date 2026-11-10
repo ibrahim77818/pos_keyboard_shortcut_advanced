@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="pos_keyboard_shortcut_view_tree" model="ir.ui.view">
+        <field name="name">pos.keyboard.shortcut.tree</field>
+        <field name="model">pos.keyboard.shortcut</field>
+        <field name="arch" type="xml">
+            <list string="Keyboard Shortcuts" editable="bottom" decoration-muted="not active">
+                <header>
+                    <button name="action_reset_all_defaults" type="object" string="Reset All to Defaults"
+                            display="always"
+                            confirm="Every customised key will be restored to the factory map and POS-specific shortcuts will be archived. Continue?"/>
+                </header>
+                <field name="sequence" widget="handle"/>
+                <field name="action"/>
+                <field name="name"/>
+                <field name="key" widget="pksa_key_capture"/>
+                <field name="ctrl_key" optional="show"/>
+                <field name="alt_key" optional="show"/>
+                <field name="shift_key" optional="show"/>
+                <field name="combo_display"/>
+                <field name="default_combo" optional="show"/>
+                <field name="is_default" invisible="1"/>
+                <field name="config_ids" widget="many2many_tags" optional="show"/>
+                <field name="active" widget="boolean_toggle"/>
+                <button name="action_suggest_key" type="object" icon="fa-magic" title="Suggest Free Key"/>
+                <button name="action_restore_default" type="object" icon="fa-undo" title="Restore Default"
+                        invisible="is_default"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="pos_keyboard_shortcut_view_form" model="ir.ui.view">
+        <field name="name">pos.keyboard.shortcut.form</field>
+        <field name="model">pos.keyboard.shortcut</field>
+        <field name="arch" type="xml">
+            <form string="Keyboard Shortcut">
+                <header>
+                    <button name="action_suggest_key" type="object" string="Suggest Free Key" class="btn-primary"/>
+                    <button name="action_restore_default" type="object" string="Restore Default"
+                            invisible="is_default"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                            invisible="active"/>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group string="Mapping">
+                            <field name="action"/>
+                            <field name="key" widget="pksa_key_capture"/>
+                            <field name="ctrl_key"/>
+                            <field name="alt_key"/>
+                            <field name="shift_key"/>
+                        </group>
+                        <group string="Result">
+                            <field name="combo_display"/>
+                            <field name="default_combo"/>
+                            <field name="is_default" invisible="1"/>
+                            <field name="combo" groups="base.group_no_one"/>
+                            <field name="config_ids" widget="many2many_tags"/>
+                            <field name="sequence"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                    </group>
+                    <field name="note" placeholder="Internal note..."/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="pos_keyboard_shortcut_view_search" model="ir.ui.view">
+        <field name="name">pos.keyboard.shortcut.search</field>
+        <field name="model">pos.keyboard.shortcut</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="combo_display" string="Shortcut" filter_domain="[('combo', 'ilike', self)]"/>
+                <field name="config_ids"/>
+                <filter name="pos_specific" string="POS Specific" domain="[('config_ids', '!=', False)]"/>
+                <separator/>
+                <filter name="inactive" string="Archived" domain="[('active', '=', False)]"/>
+                <group>
+                    <filter name="group_action" string="Action" context="{'group_by': 'action'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_pos_keyboard_shortcut" model="ir.actions.act_window">
+        <field name="name">Keyboard Shortcuts</field>
+        <field name="res_model">pos.keyboard.shortcut</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Define POS keyboard shortcuts</p>
+            <p>Map keys to POS actions: grid navigation, order line selection, payment and more.
+               Click inside the <b>Key</b> cell and press the key you want to assign.</p>
+        </field>
+    </record>
+
+    <menuitem id="menu_pos_keyboard_shortcut"
+              name="Keyboard Shortcuts"
+              parent="point_of_sale.menu_point_config_product"
+              action="action_pos_keyboard_shortcut"
+              groups="point_of_sale.group_pos_manager"
+              sequence="40"/>
+</odoo>
