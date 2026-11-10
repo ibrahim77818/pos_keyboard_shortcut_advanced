@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="shortcut_orderline_prev" model="pos.keyboard.shortcut">
+        <field name="name">Select Previous Order Line</field>
+        <field name="action">orderline_prev</field>
+        <field name="key">PageUp</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="shortcut_orderline_next" model="pos.keyboard.shortcut">
+        <field name="name">Select Next Order Line</field>
+        <field name="action">orderline_next</field>
+        <field name="key">PageDown</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="shortcut_grid_up" model="pos.keyboard.shortcut">
+        <field name="name">Product Grid: Move Up</field>
+        <field name="action">grid_up</field>
+        <field name="key">ArrowUp</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="shortcut_grid_down" model="pos.keyboard.shortcut">
+        <field name="name">Product Grid: Move Down</field>
+        <field name="action">grid_down</field>
+        <field name="key">ArrowDown</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="shortcut_grid_left" model="pos.keyboard.shortcut">
+        <field name="name">Product Grid: Move Left</field>
+        <field name="action">grid_left</field>
+        <field name="key">ArrowLeft</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="shortcut_grid_right" model="pos.keyboard.shortcut">
+        <field name="name">Product Grid: Move Right</field>
+        <field name="action">grid_right</field>
+        <field name="key">ArrowRight</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="shortcut_activate_product" model="pos.keyboard.shortcut">
+        <field name="name">Add Focused Product (same as mouse click)</field>
+        <field name="action">activate_product</field>
+        <field name="key">Enter</field>
+        <field name="sequence">70</field>
+    </record>
+    <record id="shortcut_focus_search" model="pos.keyboard.shortcut">
+        <field name="name">Focus Product Search</field>
+        <field name="action">focus_search</field>
+        <field name="key">F2</field>
+        <field name="sequence">80</field>
+    </record>
+    <record id="shortcut_focus_grid" model="pos.keyboard.shortcut">
+        <field name="name">Focus Product Grid</field>
+        <field name="action">focus_grid</field>
+        <field name="key">F3</field>
+        <field name="sequence">90</field>
+    </record>
+    <record id="shortcut_go_payment" model="pos.keyboard.shortcut">
+        <field name="name">Go to Payment</field>
+        <field name="action">go_payment</field>
+        <field name="key">F9</field>
+        <field name="sequence">100</field>
+    </record>
+    <record id="shortcut_show_help" model="pos.keyboard.shortcut">
+        <field name="name">Show Keyboard Shortcuts</field>
+        <field name="action">show_help</field>
+        <field name="key">F1</field>
+        <field name="sequence">110</field>
+    </record>
+</odoo>
