@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="pos_keyboard_shortcut_advanced.KeyCaptureField" owl="1">
+        <t t-if="props.readonly">
+            <span class="o_pksa_key badge bg-light text-dark border" t-if="props.value" t-esc="displayValue"/>
+        </t>
+        <t t-else="">
+            <input type="text" readonly="readonly"
+                   class="o_input o_pksa_key_capture"
+                   t-att-id="props.id"
+                   t-att-value="displayValue"
+                   t-att-placeholder="placeholder"
+                   t-att-class="{ 'o_pksa_listening': state.listening }"
+                   t-on-focus="onFocus"
+                   t-on-blur="onBlur"
+                   t-on-keydown="onKeydown"/>
+        </t>
+    </t>
+</templates>

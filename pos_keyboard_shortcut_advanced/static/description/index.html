@@ -1,0 +1,194 @@
+<!-- Odoo Apps description page for pos_keyboard_shortcut_advanced (Odoo 16.0). Inline styles only: apps.odoo.com strips <style> and <script> blocks. -->
+<section style="max-width:1120px;margin:0 auto;padding:0 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#2b2b33;">
+
+<!-- ============================== HERO ============================== -->
+<div style="background:linear-gradient(120deg,#017E84 0%,#3d6b78 45%,#714B67 100%);border-radius:18px;padding:48px 40px 40px;color:#ffffff;margin-top:12px;">
+  <div style="font-size:13px;letter-spacing:2px;text-transform:uppercase;opacity:.85;margin-bottom:10px;">Point of Sale &middot; Keyboard &middot; Productivity</div>
+  <h1 style="font-size:40px;line-height:1.15;font-weight:700;margin:0 0 14px;color:#ffffff;">POS Keyboard Shortcuts &amp; Grid Navigation</h1>
+  <p style="font-size:19px;line-height:1.55;max-width:760px;margin:0 0 24px;color:#ffffff;opacity:.95;">Run the whole product screen from the keyboard: arrow keys move across the product grid, <b>Enter</b> adds the focused product exactly like a mouse click, and <b>PageUp / PageDown</b> walk through the order lines. Every key can be changed from the backend, and barcode scanners keep working.</p>
+  <div>
+    <span style="display:inline-block;border:1px solid rgba(255,255,255,.7);border-radius:20px;padding:6px 14px;margin:0 8px 8px 0;font-size:14px;">Odoo 16.0</span>
+    <span style="display:inline-block;border:1px solid rgba(255,255,255,.7);border-radius:20px;padding:6px 14px;margin:0 8px 8px 0;font-size:14px;">Community &amp; Enterprise</span>
+    <span style="display:inline-block;border:1px solid rgba(255,255,255,.7);border-radius:20px;padding:6px 14px;margin:0 8px 8px 0;font-size:14px;">English &amp; العربية</span>
+    <span style="display:inline-block;border:1px solid rgba(255,255,255,.7);border-radius:20px;padding:6px 14px;margin:0 8px 8px 0;font-size:14px;">25 automated tests</span>
+    <span style="display:inline-block;border:1px solid rgba(255,255,255,.7);border-radius:20px;padding:6px 14px;margin:0 8px 8px 0;font-size:14px;">Technical name: pos_keyboard_shortcut_advanced</span>
+    <span style="display:inline-block;border:1px solid rgba(255,255,255,.7);border-radius:20px;padding:6px 14px;margin:0 8px 8px 0;font-size:14px;">LGPL-3</span>
+  </div>
+</div>
+
+<!-- ============================== KEY NUMBERS ============================== -->
+<div style="display:flex;flex-wrap:wrap;margin:28px -8px 8px;">
+  <div style="flex:1 1 220px;margin:8px;background:#f6f4f6;border-radius:14px;padding:20px 22px;"><div style="font-size:30px;font-weight:700;color:#714B67;">11 actions</div><div style="font-size:15px;color:#555;">Grid moves, Enter-to-add, order lines, search, payment, help</div></div>
+  <div style="flex:1 1 220px;margin:8px;background:#eef6f6;border-radius:14px;padding:20px 22px;"><div style="font-size:30px;font-weight:700;color:#017E84;">1 Enter = 1 unit</div><div style="font-size:15px;color:#555;">Same code path as a mouse click, every press counted</div></div>
+  <div style="flex:1 1 220px;margin:8px;background:#f6f4f6;border-radius:14px;padding:20px 22px;"><div style="font-size:30px;font-weight:700;color:#714B67;">0 conflicts</div><div style="font-size:15px;color:#555;">Duplicate or unsafe keys are refused at save time</div></div>
+  <div style="flex:1 1 220px;margin:8px;background:#eef6f6;border-radius:14px;padding:20px 22px;"><div style="font-size:30px;font-weight:700;color:#017E84;">Per POS</div><div style="font-size:15px;color:#555;">Global key map, with overrides and an on/off switch per shop</div></div>
+</div>
+
+<!-- ============================== WHY ============================== -->
+<h2 style="font-size:28px;font-weight:700;margin:40px 0 6px;color:#2b2b33;">Why this module</h2>
+<p style="font-size:16px;color:#555;margin:0 0 18px;">Fast cashiers keep their hands on the keyboard. The standard product screen is built for touch and mouse.</p>
+<div style="display:flex;flex-wrap:wrap;margin:0 -10px;">
+  <div style="flex:1 1 440px;margin:10px;border:1px solid #f1d6d6;background:#fff8f8;border-radius:14px;padding:24px 26px;">
+    <h3 style="font-size:19px;font-weight:700;color:#b33939;margin:0 0 12px;">In standard Odoo 16</h3>
+    <ul style="font-size:15px;line-height:1.65;margin:0;padding-left:20px;color:#3a3a42;">
+      <li>Arrow keys do <b>not move between product cards</b>; Tab walks them one by one.</li>
+      <li><b>Enter on a product card does nothing</b>; only Space adds it (Enter is left to the barcode scanner).</li>
+      <li>No key selects the <b>previous / next order line</b>; you must click it.</li>
+      <li>No shortcut to <b>jump to search</b> or <b>open Payment</b>.</li>
+      <li>No way for an administrator to <b>define or change keys</b>.</li>
+      <li>Nothing tells the cashier <b>which keys exist</b>.</li>
+    </ul>
+  </div>
+  <div style="flex:1 1 440px;margin:10px;border:1px solid #cfe7e7;background:#f4fbfb;border-radius:14px;padding:24px 26px;">
+    <h3 style="font-size:19px;font-weight:700;color:#017E84;margin:0 0 12px;">With this module</h3>
+    <ul style="font-size:15px;line-height:1.65;margin:0;padding-left:20px;color:#3a3a42;">
+      <li><b>&larr; &uarr; &rarr; &darr;</b> move a visible focus ring across the grid, row by row and column by column.</li>
+      <li><b>Enter</b> adds the focused product like a click, <b>+1 on every press</b>; scanner Enters are recognised and left alone.</li>
+      <li><b>PageUp / PageDown</b> select the previous / next order line, ready for the numpad.</li>
+      <li><b>F2</b> search, <b>F3</b> back to the grid, <b>F9</b> Payment.</li>
+      <li>A <b>Keyboard Shortcuts</b> menu: press a key to assign it, suggest a free one, restore defaults.</li>
+      <li><b>F1</b> opens a cheat sheet listing the active keys, with a live <b>Reload</b>.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================== HOW IT WORKS ============================== -->
+<h2 style="font-size:28px;font-weight:700;margin:40px 0 6px;color:#2b2b33;">How it works</h2>
+<p style="font-size:16px;color:#555;margin:0 0 18px;">Install, open a session, type.</p>
+<div style="display:flex;flex-wrap:wrap;margin:0 -8px;">
+  <div style="flex:1 1 200px;margin:8px;border-radius:12px;border:1px solid #e3dde2;padding:18px;"><div style="width:34px;height:34px;border-radius:50%;background:#714B67;color:#fff;font-weight:700;text-align:center;line-height:34px;margin-bottom:10px;">1</div><div style="font-weight:700;margin-bottom:4px;">Install</div><div style="font-size:14px;color:#555;">The default key map (11 shortcuts) is created and switched on for every Point of Sale.</div></div>
+  <div style="flex:1 1 200px;margin:8px;border-radius:12px;border:1px solid #e3dde2;padding:18px;"><div style="width:34px;height:34px;border-radius:50%;background:#714B67;color:#fff;font-weight:700;text-align:center;line-height:34px;margin-bottom:10px;">2</div><div style="font-weight:700;margin-bottom:4px;">Adjust (optional)</div><div style="font-size:14px;color:#555;">In <b>Point of Sale &rsaquo; Configuration &rsaquo; Keyboard Shortcuts</b>, change keys or add shop-specific ones.</div></div>
+  <div style="flex:1 1 200px;margin:8px;border-radius:12px;border:1px solid #e3dde2;padding:18px;"><div style="width:34px;height:34px;border-radius:50%;background:#714B67;color:#fff;font-weight:700;text-align:center;line-height:34px;margin-bottom:10px;">3</div><div style="font-weight:700;margin-bottom:4px;">Open the session</div><div style="font-size:14px;color:#555;">The POS loads the key map for that shop at startup, along with products and taxes.</div></div>
+  <div style="flex:1 1 200px;margin:8px;border-radius:12px;border:1px solid #cfe7e7;background:#f4fbfb;padding:18px;"><div style="width:34px;height:34px;border-radius:50%;background:#017E84;color:#fff;font-weight:700;text-align:center;line-height:34px;margin-bottom:10px;">4</div><div style="font-weight:700;margin-bottom:4px;">Sell from the keyboard</div><div style="font-size:14px;color:#555;">Arrows to pick, Enter to add, digits for quantity, PageUp/PageDown to fix a line, F9 to pay.</div></div>
+</div>
+
+<!-- ============================== FEATURES ============================== -->
+<h2 style="font-size:28px;font-weight:700;margin:40px 0 6px;color:#2b2b33;">Features</h2>
+<p style="font-size:16px;color:#555;margin:0 0 4px;">Screenshots come from a demo shop, <b>Office Demo Shop</b>, with 12 office furniture products, the default key map and one shop-specific override (<b>Go to Payment</b> on <b>F8</b>).</p>
+
+<div style="margin:44px 0 0;">
+  <div style="font-size:13px;font-weight:700;color:#017E84;letter-spacing:1px;text-transform:uppercase;">Menus</div>
+  <h3 style="font-size:23px;font-weight:700;margin:4px 0 8px;">One configuration menu, one setting</h3>
+  <p style="font-size:15px;line-height:1.6;color:#555;margin:0 0 14px;"><b>Point of Sale &rsaquo; Configuration &rsaquo; Keyboard Shortcuts</b> (POS Administrators) lists every mapping. Each shop also gets a <b>Keyboard Shortcuts</b> switch in <b>Point of Sale &rsaquo; Configuration &rsaquo; Settings</b>, with a <b>Configure Shortcuts</b> link.</p>
+  <img src="pksa_01_menu.png" alt="Keyboard Shortcuts menu under Point of Sale Configuration" style="width:100%;max-width:960px;border:1px solid #e1e1e6;border-radius:10px;box-shadow:0 6px 24px rgba(30,30,60,.10);margin-bottom:22px;"/>
+  <img src="pksa_02_settings.png" alt="Keyboard Shortcuts setting in Point of Sale settings" style="width:100%;max-width:920px;border:1px solid #e1e1e6;border-radius:10px;box-shadow:0 6px 24px rgba(30,30,60,.10);"/>
+</div>
+
+<div style="margin:44px 0 0;">
+  <div style="font-size:13px;font-weight:700;color:#017E84;letter-spacing:1px;text-transform:uppercase;">Feature 1</div>
+  <h3 style="font-size:23px;font-weight:700;margin:4px 0 8px;">Move across the product grid with the arrow keys</h3>
+  <p style="font-size:15px;line-height:1.6;color:#555;margin:0 0 14px;">The first arrow press focuses the first product card. <b>&larr; &rarr;</b> move one card in reading order, <b>&uarr; &darr;</b> move one row and stay in the same column. The cursor stops at the edges, jumps to the last card when the row below is shorter, and follows the screen direction in Arabic (right-to-left). The focused card gets a clear ring; after you click elsewhere a faint marker shows where the arrows will continue.</p>
+  <img src="pksa_03_grid_focus.png" alt="POS product grid with a focus ring on one product card" style="width:100%;border:1px solid #e1e1e6;border-radius:10px;box-shadow:0 6px 24px rgba(30,30,60,.10);"/>
+  <div style="font-size:13px;color:#777;margin:6px 0 0;">Focus ring on <b>Monitor Stand</b>; the three order lines were added from the keyboard only.</div>
+</div>
+
+<div style="margin:44px 0 0;">
+  <div style="font-size:13px;font-weight:700;color:#017E84;letter-spacing:1px;text-transform:uppercase;">Feature 2</div>
+  <h3 style="font-size:23px;font-weight:700;margin:4px 0 8px;">Enter adds the product exactly like a click</h3>
+  <p style="font-size:15px;line-height:1.6;color:#555;margin:0 0 14px;">On a focused card, <b>Enter</b> runs the same handler as a mouse click: the first press adds <b>1 unit</b>, each further press adds one more. Variant configurator, lot/serial prompt, scale and any module that extends the click (for example packaging modules) behave as usual. Ten fast presses give exactly ten units; holding the key down does not keep adding.</p>
+  <img src="pksa_04_enter_quantity.png" alt="Order line quantity increased by pressing Enter on a product card" style="width:100%;border:1px solid #e1e1e6;border-radius:10px;box-shadow:0 6px 24px rgba(30,30,60,.10);"/>
+  <div style="font-size:13px;color:#777;margin:6px 0 0;">Three presses of <b>Enter</b> on the focused <b>Corner Desk Right Sit</b> card: <b>3.00</b> pcs.</div>
+</div>
+
+<div style="margin:44px 0 0;">
+  <div style="font-size:13px;font-weight:700;color:#017E84;letter-spacing:1px;text-transform:uppercase;">Feature 3</div>
+  <h3 style="font-size:23px;font-weight:700;margin:4px 0 8px;">PageUp / PageDown select order lines</h3>
+  <p style="font-size:15px;line-height:1.6;color:#555;margin:0 0 14px;"><b>PageUp</b> selects the previous order line and <b>PageDown</b> the next one, scrolls it into view and clears the numpad buffer, so the next digits you type set that line&rsquo;s quantity. Selection stops at the first and last line.</p>
+  <img src="pksa_05_orderline_select.png" alt="Previous order line selected with PageUp" style="width:100%;max-width:380px;border:1px solid #e1e1e6;border-radius:10px;box-shadow:0 6px 24px rgba(30,30,60,.10);"/>
+  <div style="font-size:13px;color:#777;margin:6px 0 0;"><b>PageUp</b> moved the selection from <b>Office Chair Black</b> to <b>Large Desk</b>; typing <b>4</b> then set its quantity.</div>
+</div>
+
+<div style="margin:44px 0 0;">
+  <div style="font-size:13px;font-weight:700;color:#017E84;letter-spacing:1px;text-transform:uppercase;">Feature 4</div>
+  <h3 style="font-size:23px;font-weight:700;margin:4px 0 8px;">Press a key to assign it</h3>
+  <p style="font-size:15px;line-height:1.6;color:#555;margin:0 0 14px;">In the list, click the <b>Key</b> cell and press the key: the key and the <b>Ctrl</b>, <b>Alt</b> and <b>Shift</b> boxes are filled for you, and the <b>Shortcut</b> column shows the result (for example <b>Ctrl+Alt+S</b>). The magic-wand button (<b>Suggest Free Key</b>) picks the first safe, unused combination, the undo button (<b>Restore Default</b>) brings back the factory key, and <b>Reset All to Defaults</b> resets the whole map. Leave <b>Point of Sale</b> empty for every shop, or pick shops to override the global key of that action there.</p>
+  <img src="pksa_06_shortcut_list.png" alt="Keyboard Shortcuts list with key capture, modifiers, defaults and Point of Sale scope" style="width:100%;border:1px solid #e1e1e6;border-radius:10px;box-shadow:0 6px 24px rgba(30,30,60,.10);margin-bottom:22px;"/>
+  <img src="pksa_07_conflict_warning.png" alt="Shortcut conflict warning when a key is already used" style="width:100%;max-width:1000px;border:1px solid #e1e1e6;border-radius:10px;box-shadow:0 6px 24px rgba(30,30,60,.10);"/>
+  <div style="font-size:13px;color:#777;margin:6px 0 0;">A key already used in the same shop, or an unsafe key, is flagged as you type and refused on save.</div>
+</div>
+
+<div style="margin:44px 0 0;">
+  <div style="font-size:13px;font-weight:700;color:#017E84;letter-spacing:1px;text-transform:uppercase;">Feature 5</div>
+  <h3 style="font-size:23px;font-weight:700;margin:4px 0 8px;">F1 cheat sheet with live reload</h3>
+  <p style="font-size:15px;line-height:1.6;color:#555;margin:0 0 14px;"><b>F1</b> opens <b>Keyboard Shortcuts</b> inside the POS with every active action and its keys. <b>Reload</b> fetches the latest map from the server, so a change made in the backend applies without closing the session. Offline, the current keys are kept.</p>
+  <img src="pksa_08_help_popup.png" alt="Keyboard Shortcuts popup in the POS with Reload button" style="width:100%;max-width:400px;border:1px solid #e1e1e6;border-radius:10px;box-shadow:0 6px 24px rgba(30,30,60,.10);"/>
+  <div style="font-size:13px;color:#777;margin:6px 0 0;">In <b>Office Demo Shop</b>, <b>Go to Payment</b> shows <b>F8</b>: the shop-specific shortcut replaces the global <b>F9</b>.</div>
+</div>
+
+<!-- ============================== DEFAULT KEY MAP ============================== -->
+<h2 style="font-size:28px;font-weight:700;margin:40px 0 6px;color:#2b2b33;">Default key map</h2>
+<p style="font-size:16px;color:#555;margin:0 0 18px;">Created at installation; every row can be changed or archived.</p>
+<table style="width:100%;border-collapse:collapse;font-size:15px;">
+  <thead><tr style="background:#714B67;color:#fff;"><th style="text-align:left;padding:10px 14px;width:200px;">Key</th><th style="text-align:left;padding:10px 14px;">Action</th></tr></thead>
+  <tbody>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:10px 14px;"><b>&larr; &uarr; &rarr; &darr;</b></td><td style="padding:10px 14px;">Product Grid: Move Left / Up / Right / Down</td></tr>
+    <tr style="border-bottom:1px solid #eee;background:#fafafa;"><td style="padding:10px 14px;"><b>Enter</b></td><td style="padding:10px 14px;">Add Focused Product (same as mouse click)</td></tr>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:10px 14px;"><b>PageUp / PageDown</b></td><td style="padding:10px 14px;">Select Previous / Next Order Line</td></tr>
+    <tr style="border-bottom:1px solid #eee;background:#fafafa;"><td style="padding:10px 14px;"><b>F2</b></td><td style="padding:10px 14px;">Focus Product Search</td></tr>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:10px 14px;"><b>F3</b></td><td style="padding:10px 14px;">Focus Product Grid (returns to the last card)</td></tr>
+    <tr style="border-bottom:1px solid #eee;background:#fafafa;"><td style="padding:10px 14px;"><b>F9</b></td><td style="padding:10px 14px;">Go to Payment (same checks as the Payment button)</td></tr>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:10px 14px;"><b>F1</b></td><td style="padding:10px 14px;">Show Keyboard Shortcuts</td></tr>
+  </tbody>
+</table>
+
+<h3 style="font-size:19px;font-weight:700;margin:28px 0 10px;">Which keys are allowed</h3>
+<div style="margin-bottom:6px;"><span style="display:inline-block;min-width:150px;text-align:center;background:#d1fae5;color:#047857;border-radius:10px;padding:1px 8px;font-size:13px;margin-right:10px;">Allowed</span> Arrows, PageUp/PageDown, Home, End, Insert, F1&ndash;F4, F6&ndash;F10, and any key combined with Ctrl or Alt</div>
+<div style="margin-bottom:6px;"><span style="display:inline-block;min-width:150px;text-align:center;background:#fef3c7;color:#b45309;border-radius:10px;padding:1px 8px;font-size:13px;margin-right:10px;">Needs Ctrl or Alt</span> Letters, digits, symbols, Backspace, Delete, Tab, Escape, Space</div>
+<div style="margin-bottom:6px;"><span style="display:inline-block;min-width:150px;text-align:center;background:#dbeafe;color:#1d4ed8;border-radius:10px;padding:1px 8px;font-size:13px;margin-right:10px;">Enter only</span> Plain Enter is reserved for <b>Add Focused Product</b></div>
+<div style="margin-bottom:6px;"><span style="display:inline-block;min-width:150px;text-align:center;background:#fee2e2;color:#b91c1c;border-radius:10px;padding:1px 8px;font-size:13px;margin-right:10px;">Refused</span> Browser keys: F5, F11, F12, Ctrl+R, Ctrl+W, Ctrl+T, Ctrl+N, developer-tool shortcuts</div>
+<div style="background:#f4fbfb;border-left:4px solid #017E84;border-radius:8px;padding:16px 20px;font-size:15px;line-height:1.6;margin-top:14px;"><b>Why:</b> a barcode scanner &ldquo;types&rdquo; digits and ends with Enter, and the POS numpad listens to digits, Backspace and Delete. Keeping those keys free means scanning and typing quantities work exactly as before. Example: mapping <b>Go to Payment</b> to <b>P</b> is refused; <b>Alt+P</b> is accepted.</div>
+
+<!-- ============================== CORNER CASES ============================== -->
+<h2 style="font-size:28px;font-weight:700;margin:40px 0 6px;color:#2b2b33;">Built for real-world corner cases</h2>
+<p style="font-size:16px;color:#555;margin:0 0 18px;">The situations that break naive keyboard add-ons on a busy till.</p>
+<div style="display:flex;flex-wrap:wrap;margin:0 -8px;font-size:15px;line-height:1.55;">
+  <div style="flex:1 1 320px;margin:8px;padding:16px 18px;border:1px solid #e8e8ee;border-radius:12px;"><b>Barcode scan while a card is focused</b><br/><span style="color:#555;">The scanner&rsquo;s closing Enter is recognised (fast burst of characters, or already handled by the barcode service) and never adds the focused product.</span></div>
+  <div style="flex:1 1 320px;margin:8px;padding:16px 18px;border:1px solid #e8e8ee;border-radius:12px;"><b>Enter opens a popup</b><br/><span style="color:#555;">For products that ask for a lot/serial or variant, the release of the same Enter is held back so it cannot confirm the popup it just opened.</span></div>
+  <div style="flex:1 1 320px;margin:8px;padding:16px 18px;border:1px solid #e8e8ee;border-radius:12px;"><b>Very fast typing</b><br/><span style="color:#555;">Presses are queued and processed one after another: N presses, N units, in order. Holding Enter down is ignored.</span></div>
+  <div style="flex:1 1 320px;margin:8px;padding:16px 18px;border:1px solid #e8e8ee;border-radius:12px;"><b>Typing in the search bar</b><br/><span style="color:#555;">Arrows and Enter keep their normal meaning in inputs; only function keys and Ctrl/Alt shortcuts work there (F3 returns to the grid).</span></div>
+  <div style="flex:1 1 320px;margin:8px;padding:16px 18px;border:1px solid #e8e8ee;border-radius:12px;"><b>Popups and the scale screen</b><br/><span style="color:#555;">While a popup or the scale screen is open, shortcuts are paused so they never act behind it.</span></div>
+  <div style="flex:1 1 320px;margin:8px;padding:16px 18px;border:1px solid #e8e8ee;border-radius:12px;"><b>Uneven last row and resized window</b><br/><span style="color:#555;">The column count is read from the live grid on each press, so resizing or a shorter last row never sends the cursor off the grid.</span></div>
+  <div style="flex:1 1 320px;margin:8px;padding:16px 18px;border:1px solid #e8e8ee;border-radius:12px;"><b>Arabic / right-to-left</b><br/><span style="color:#555;">Left and right follow what the cashier sees on screen.</span></div>
+  <div style="flex:1 1 320px;margin:8px;padding:16px 18px;border:1px solid #e8e8ee;border-radius:12px;"><b>Several shops, different habits</b><br/><span style="color:#555;">A shortcut bound to one Point of Sale replaces the global one for that action there only; the same key can mean different actions in shops that don&rsquo;t overlap.</span></div>
+  <div style="flex:1 1 320px;margin:8px;padding:16px 18px;border:1px solid #e8e8ee;border-radius:12px;"><b>Long shifts, no slowdown</b><br/><span style="color:#555;">Key listeners are attached once when the product screen opens and removed when it closes; one table lookup per key press, unmapped keys exit immediately.</span></div>
+</div>
+
+<!-- ============================== SECURITY ============================== -->
+<h2 style="font-size:28px;font-weight:700;margin:40px 0 6px;color:#2b2b33;">Security</h2>
+<p style="font-size:16px;color:#555;margin:0 0 18px;">Uses the standard Point of Sale groups.</p>
+<table style="width:100%;border-collapse:collapse;font-size:15px;">
+  <thead><tr style="background:#714B67;color:#fff;"><th style="text-align:left;padding:10px 14px;width:260px;">Who</th><th style="text-align:left;padding:10px 14px;">Sees / can do</th></tr></thead>
+  <tbody>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:10px 14px;"><b>Point of Sale / User</b></td><td style="padding:10px 14px;">Uses the shortcuts in the POS and reads the key map (needed to load and reload it). Cannot change it.</td></tr>
+    <tr style="border-bottom:1px solid #eee;background:#fafafa;"><td style="padding:10px 14px;"><b>Point of Sale / Administrator</b></td><td style="padding:10px 14px;">Sees the <b>Keyboard Shortcuts</b> menu; creates, edits, archives and deletes shortcuts; toggles the feature per shop in Settings.</td></tr>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:10px 14px;"><b>Multi-shop</b></td><td style="padding:10px 14px;">Each session only receives the global shortcuts plus those bound to its own Point of Sale.</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================== TECHNICAL ============================== -->
+<h2 style="font-size:28px;font-weight:700;margin:40px 0 6px;color:#2b2b33;">Technical details</h2>
+<table style="width:100%;border-collapse:collapse;font-size:15px;">
+  <tbody>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:10px 14px;width:240px;color:#777;">Odoo version</td><td style="padding:10px 14px;">16.0, Community and Enterprise</td></tr>
+    <tr style="border-bottom:1px solid #eee;background:#fafafa;"><td style="padding:10px 14px;width:240px;color:#777;">Depends on</td><td style="padding:10px 14px;"><code>point_of_sale</code></td></tr>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:10px 14px;width:240px;color:#777;">Python dependency</td><td style="padding:10px 14px;">None</td></tr>
+    <tr style="border-bottom:1px solid #eee;background:#fafafa;"><td style="padding:10px 14px;width:240px;color:#777;">Languages</td><td style="padding:10px 14px;">English, Arabic (<code>i18n/ar.po</code>, used for Arabic / ar_001), right-to-left aware grid navigation</td></tr>
+    <tr style="border-bottom:1px solid #eee;background:#fafafa;"><td style="padding:10px 14px;width:240px;color:#777;">Menus</td><td style="padding:10px 14px;">Point of Sale &rsaquo; Configuration &rsaquo; Keyboard Shortcuts</td></tr>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:10px 14px;width:240px;color:#777;">Settings</td><td style="padding:10px 14px;">Point of Sale &rsaquo; Configuration &rsaquo; Settings &rsaquo; <b>Keyboard Shortcuts</b> (per Point of Sale)</td></tr>
+    <tr style="border-bottom:1px solid #eee;background:#fafafa;"><td style="padding:10px 14px;width:240px;color:#777;">Models</td><td style="padding:10px 14px;"><code>pos.keyboard.shortcut</code> (new); <code>pos.config</code>, <code>pos.session</code>, <code>res.config.settings</code> (extended)</td></tr>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:10px 14px;width:240px;color:#777;">POS extensions</td><td style="padding:10px 14px;"><code>ProductScreen</code> and <code>PosGlobalState</code> extended through the POS registries; one new popup. No core template overridden.</td></tr>
+    <tr style="border-bottom:1px solid #eee;background:#fafafa;"><td style="padding:10px 14px;width:240px;color:#777;">Automated tests</td><td style="padding:10px 14px;">25: 10 Python tests (key rules, conflicts and shop scopes, suggestions, defaults, POS loading), 1 browser tour (grid moves checked against real card positions, 20-key bursts, F2/F3, Enter adding 1 then +1, 10 fast Enters, PageUp/PageDown), 14 QUnit tests (grid maths over every layout up to 25 cards &times; 8 columns, scanner guard, press queue, no listener leaks across re-renders)</td></tr>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:10px 14px;width:240px;color:#777;">License</td><td style="padding:10px 14px;">LGPL-3</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================== CONTACT ============================== -->
+<div style="margin:52px 0 40px;background:linear-gradient(120deg,#714B67 0%,#017E84 100%);border-radius:18px;padding:36px 40px;color:#fff;">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 8px;color:#fff;">Support &amp; customization</h2>
+  <p style="font-size:16px;line-height:1.6;margin:0 0 20px;color:#fff;opacity:.95;">Questions, a demo, or an adaptation to your own process? Get in touch.</p>
+  <a href="mailto:ibrahim.yahiah@gmail.com" style="display:inline-block;background:#fff;color:#714B67;font-weight:700;text-decoration:none;border-radius:8px;padding:12px 22px;margin:0 12px 10px 0;">&#9993;  ibrahim.yahiah@gmail.com</a>
+  <a href="https://www.linkedin.com/in/ibrahim-yahia" target="_blank" rel="noopener" style="display:inline-block;border:2px solid #fff;color:#fff;font-weight:700;text-decoration:none;border-radius:8px;padding:10px 22px;margin:0 0 10px 0;">LinkedIn: Ibrahim Yahia</a>
+  <p style="font-size:13px;margin:14px 0 0;opacity:.8;color:#fff;">Author: Ibrahim Yahia &middot; License: LGPL-3</p>
+</div>
+
+</section>
