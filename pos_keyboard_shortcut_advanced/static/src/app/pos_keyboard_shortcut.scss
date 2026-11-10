@@ -1,0 +1,57 @@
+// Keyboard cursor on product cards: strong ring while focused, a subtle
+// marker when focus is elsewhere (shows where the arrows will resume).
+.pos .product-list article.product {
+    &.pksa-focused {
+        box-shadow: 0 0 0 2px rgba($primary, 0.35);
+    }
+    &:focus,
+    &:focus-visible,
+    &.pksa-focused:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px $primary;
+        z-index: 1;
+    }
+}
+
+.pos .pksa-help-popup {
+    max-width: 520px;
+    .modal-body {
+        max-height: 60vh;
+        overflow-y: auto;
+        text-align: start;
+    }
+    .pksa-help-table {
+        width: 100%;
+        border-collapse: collapse;
+        td {
+            padding: 6px 8px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            vertical-align: middle;
+        }
+        .pksa-help-keys {
+            text-align: end;
+            white-space: nowrap;
+        }
+        kbd {
+            display: inline-block;
+            margin-inline-start: 4px;
+            padding: 2px 6px;
+            border: 1px solid #ccc;
+            border-bottom-width: 2px;
+            border-radius: 4px;
+            background: #f7f7f7;
+            color: #333;
+            font-size: 0.85em;
+        }
+    }
+    .pksa-help-message,
+    .pksa-help-empty {
+        margin-top: 10px;
+        color: #666;
+        font-size: 0.9em;
+    }
+    .button.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+    }
+}

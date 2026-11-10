@@ -1,0 +1,11 @@
+.o_pksa_key_capture {
+    cursor: pointer;
+    font-family: $font-family-monospace;
+    &.o_pksa_listening {
+        background-color: rgba($primary, 0.08);
+        border-color: $primary;
+    }
+}
+.o_pksa_key {
+    font-family: $font-family-monospace;
+}
